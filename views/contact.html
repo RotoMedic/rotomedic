@@ -1,8 +1,11 @@
+<head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">		
+</head>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 body {
   background-color: #e6e6e6;
-  font-size: 100%;
+  font-size: 14px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -13,14 +16,14 @@ div, textarea, input {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 650px;
+/*.container {
+  max-width: 2000px;
   min-width: 324px;
-  margin: 50px auto 0px;
-  background-color: #fff;
-  border: 1px solid #cfcfcf;
-  border-bottom: 3px solid #ccc;
-}
+  margin: 30px auto 0px;
+  background-color: #222222;
+  border: 0px solid #222222;
+  border-bottom: 0px solid #222222;
+}*/
 
 .row {
   width: 100%;
@@ -38,7 +41,7 @@ div, textarea, input {
 }
 
 .pull-right {
-  float: right;
+  margin-left: 50px;
 }
 
 h1 {
@@ -47,9 +50,10 @@ h1 {
   display: inline-block;
   font-weight: 100;
   font-size: 2.8125em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 0 0 0.1em 0;
-  padding: 0 0 0.4em 0;
+  border-bottom: 1px solid steelblue;
+  margin: 100 0 10 0;
+  padding: 10 0 .3em 0;
+  color: steelblue;
 }
 
 h3 {
@@ -57,6 +61,7 @@ h3 {
   font-weight: 400;
   font-size: 1.25em;
   margin: 1em 0 0.4em 0;
+  color: steelblue;
 }
 
 .btn {
@@ -183,6 +188,7 @@ form small {
   }
 }
 </style>
+
 <!-- load navi bar -->
 <!-- <div data-include="nav"></div>  -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -195,7 +201,7 @@ form small {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="../index.html">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -262,6 +268,6 @@ form small {
   <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   <!-- jQuery -->
-  <script src="/js/jquery.js"></script>
+  <script src="../js/jquery.js"></script>
 
 </div>
