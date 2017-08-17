@@ -19,7 +19,7 @@ body {
 
 .image-bg-fluid-height {
 	/*background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;*/
-	background: url('../pics/KuldeepAndKabin.JPG') no-repeat center scroll;
+	background: url('../pics/homepage.JPG') no-repeat center scroll;
     background-size: cover;
     min-height: 400px;
     max-height: 700px;
