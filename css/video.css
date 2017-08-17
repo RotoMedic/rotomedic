@@ -1,9 +1,9 @@
 .background-videos {
-    /*position: relative;*/
-    margin: 40px;
+    position: static;
+    margin: 0px;
 }
 .background-videos video {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     bottom: 100%;
@@ -95,4 +95,7 @@ footer {
 }
 .navbar-inverse .navbar-nav li a {
     color: black;
+}
+.main-section {
+    margin-top: -65%;
 }
