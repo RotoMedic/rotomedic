@@ -1,11 +1,17 @@
 .background-videos {
-    position: relative;
+    /*position: relative;*/
     margin: 40px;
 }
 .background-videos video {
-    width: 100%;
-    height: 600px;
-    /* border: 1px solid #fff; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    width: auto;
+    height: auto;
+    /*z-index: -10;*/
 }
 .background-videos img {
     width: 160px;
@@ -13,4 +19,80 @@
     top: 20px;
     left: 50%;
     margin-left: -80px;
+}
+
+.background-videos .caption {
+    position: fixed;
+    left: 1px;
+    top: 400px;
+    width: 100%;
+}
+
+.background-videos .caption p {
+    font-size: 3em;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .background-videos img { top: 15px; width: 120px; margin-left: -60px; }
+    .background-videos .caption p { font-size: 2em; line-height: 22px; padding: 10px 0px; }
+}
+@media screen and (max-width: 450px) {
+    .background-videos {
+        margin: 15px;
+        padding: 175px 0px 40px 0px;
+        border: 1px solid #fff;
+        background: url(muffins.jpg) no-repeat center bottom;
+        background-size: cover;
+    }
+    .background-videos video {display: none;}
+    .background-videos img {top: 15px; width: 90px; margin-left: -45px;}
+    .background-videos .caption {position: static;}
+    .background-videos .caption p {font-size: 1.4em; line-height: 22px; padding: 10px 0px;}
+}
+
+section {
+    margin: 750px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
+.navbar-inverse {
+    background-color: rgba(84, 125, 47, 0);
+    border-color: rgba(8, 8, 8, 0); 
+}
+.navbar-inverse .navbar-brand {
+    color: black;
+    float: right;
+}
+.navbar-inverse .navbar-nav li a {
+    color: black;
 }
